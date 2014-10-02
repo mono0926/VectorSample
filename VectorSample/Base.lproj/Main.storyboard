@@ -1,25 +1,96 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="F7G-hl-l1B">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ベクター画像を配置したサンプル-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VectorSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="love_artwork" translatesAutoresizingMaskIntoConstraints="NO" id="uYK-dB-wbr">
+                                <rect key="frame" x="20" y="40" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="FcJ-zr-tjV"/>
+                                    <constraint firstAttribute="width" constant="300" id="dyg-lu-G39"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="love_icon" translatesAutoresizingMaskIntoConstraints="NO" id="dYN-g7-cLs">
+                                <rect key="frame" x="340" y="40" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="AMg-0j-clz"/>
+                                    <constraint firstAttribute="width" constant="300" id="kKb-lO-Rer"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300x300" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAn-iv-vI1">
+                                <rect key="frame" x="125" y="11" width="91" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30x30" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6e5-2S-mRj">
+                                <rect key="frame" x="458" y="11" width="65" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30x30" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOZ-1K-PJC">
+                                <rect key="frame" x="535" y="0.0" width="65" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WAn-iv-vI1" firstAttribute="centerY" secondItem="6e5-2S-mRj" secondAttribute="centerY" id="5cB-8Q-ybv"/>
+                            <constraint firstItem="WAn-iv-vI1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="11" id="9GU-dS-AFI"/>
+                            <constraint firstItem="uYK-dB-wbr" firstAttribute="centerX" secondItem="WAn-iv-vI1" secondAttribute="centerX" id="Dvv-Fn-cVR"/>
+                            <constraint firstItem="uYK-dB-wbr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="MMA-q8-Bfk"/>
+                            <constraint firstItem="dYN-g7-cLs" firstAttribute="centerX" secondItem="6e5-2S-mRj" secondAttribute="centerX" id="ScI-BY-iV9"/>
+                            <constraint firstItem="nOZ-1K-PJC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Umf-QH-YlC"/>
+                            <constraint firstAttribute="trailing" secondItem="nOZ-1K-PJC" secondAttribute="trailing" id="l6q-Xj-7Qb"/>
+                            <constraint firstItem="dYN-g7-cLs" firstAttribute="leading" secondItem="uYK-dB-wbr" secondAttribute="trailing" constant="20" id="uaK-JM-2hN"/>
+                            <constraint firstItem="dYN-g7-cLs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="xHN-ul-i2n"/>
+                            <constraint firstItem="uYK-dB-wbr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="zYh-M0-Rm7"/>
+                        </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="ベクター画像を配置したサンプル" id="1Yx-d8-34f">
+                        <barButtonItem key="rightBarButtonItem" image="love_icon" id="fpm-65-k0K"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="454" y="1134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MAp-6s-MdD">
+            <objects>
+                <navigationController id="F7G-hl-l1B" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xqH-36-egA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1Mh-7h-4tB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Exf-72-lFi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-241" y="1134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="love_artwork" width="300" height="300"/>
+        <image name="love_icon" width="30" height="30"/>
+    </resources>
 </document>
